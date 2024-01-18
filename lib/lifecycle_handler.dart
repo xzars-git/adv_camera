@@ -29,8 +29,6 @@ class LifecycleEventHandler extends WidgetsBindingObserver {
       case AppLifecycleState.detached:
         if (onDetached != null) await onDetached!();
         break;
-      case AppLifecycleState.hidden:
-        break;
     }
   }
 }
